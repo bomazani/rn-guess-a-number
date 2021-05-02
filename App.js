@@ -7,7 +7,7 @@ import Header from './components/Header';
 export default function App() {
   return (
     <View style={styles.screen}>
-      <Header tite="Guess a Number" />
+      <Header title="Guess a Number" />
     </View>
   );
 }
