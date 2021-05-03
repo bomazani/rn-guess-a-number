@@ -18,7 +18,7 @@ const StartGameScreen = props => {
 
     const numberInputHandler = inputText => {
         // The following line uses regex to replace any non-numerical input to an empty string
-        setEnteredValue(inputText.replace(/[^0-9/g, ''));
+        setEnteredValue(inputText.replace(/[^0-9]/g, ''));
     };
 
     return (
