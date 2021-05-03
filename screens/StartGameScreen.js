@@ -23,7 +23,7 @@ const StartGameScreen = props => {
 
     return (
         <TouchableWithoutFeedback onPress={() => {
-            keyboard.dismiss;
+            keyboard.dismiss();
         }} >
             <View style={styles.startScreen}>
                 <Text style={styles.title} >Start a New Game!</Text>
