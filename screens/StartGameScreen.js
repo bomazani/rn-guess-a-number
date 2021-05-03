@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
 
 import Card from '../components/Card';
@@ -6,6 +6,13 @@ import Input from '../components/input';
 import Colors from '../constants/colors';
 
 const StartGameScreen = props => {
+
+    const [enteredValue, setEnteredValue] = useState('');
+
+    const numberInputHandler = inputText => {
+        setEnteredValue(inputText.replace(/[^0-9/g, ''));
+    };
+
     return (
         <View style={styles.startScreen}>
             <Text style={styles.title} >Start a New Game!</Text>
@@ -17,7 +24,9 @@ const StartGameScreen = props => {
                     autoCapitalize='none' 
                     autoCorrect={false} 
                     keyboardType='number-pad' 
-                    maxLength={2}  
+                    maxLength={2}
+                    onChangeText={numberInputHandler}
+                    value={enteredValue} 
                 />
                 <View style={styles.buttonContainer} >
                     <View style={styles.button}>
