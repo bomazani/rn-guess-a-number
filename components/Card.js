@@ -1,10 +1,8 @@
 import React from 'react';
 import { View, Text, TextInput, StyleSheet, Button } from 'react-native';
 
-import Card from '../components/Card';
-
 const Card = props => {
-    return <View style={{...styles.card, ...props.style}}>{props.children</View>
+    return <View style={{...styles.card, ...props.style}}>{props.children}</View>
 };
 
 const styles = StyleSheet.create({
