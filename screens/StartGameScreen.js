@@ -6,8 +6,6 @@ import {
     Keyboard,
     Button,
     TouchableWithoutFeedback
-    // Pressable
-    // Keyboard
 } from 'react-native';
 
 import Card from '../components/Card';
@@ -19,22 +17,13 @@ const StartGameScreen = props => {
     const [enteredValue, setEnteredValue] = useState('');
 
     const numberInputHandler = inputText => {
-        // The following line uses regex to replace any non-numerical input to an empty string
         setEnteredValue(inputText.replace(/[^0-9]/g, ''));
     };
 
     return (
         <TouchableWithoutFeedback 
-
-        // <Pressable
             onPress={() => {
-                // the alert proves the onPress is working
-                // alert('Pressed!')
-
                 Keyboard.dismiss() 
-                // creates an error on iOS and Android:
-                // 'undefined is not an object (evaluating '_reactNative.keyboard.dismiss')
-                // keyboard.dismiss();
             }} 
         >
             <View style={styles.startScreen}>
@@ -46,7 +35,7 @@ const StartGameScreen = props => {
                         blurOnSubmit 
                         autoCapitalize='none' 
                         autoCorrect={false} 
-                        keyboardType='numeric' 
+                        keyboardType='number-pad' 
                         maxLength={2}
                         onChangeText={numberInputHandler}
                         value={enteredValue} 
@@ -62,7 +51,6 @@ const StartGameScreen = props => {
                 </Card>
             </View>
         </TouchableWithoutFeedback >
-        // </Pressable>
     )
 };
 
