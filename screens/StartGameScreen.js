@@ -17,7 +17,6 @@ const StartGameScreen = props => {
     const [enteredValue, setEnteredValue] = useState('');
 
     const numberInputHandler = inputText => {
-        // The following line uses regex to replace any non-numerical input to an empty string
         setEnteredValue(inputText.replace(/[^0-9]/g, ''));
     };
 
@@ -36,7 +35,7 @@ const StartGameScreen = props => {
                         blurOnSubmit 
                         autoCapitalize='none' 
                         autoCorrect={false} 
-                        keyboardType='numeric' 
+                        keyboardType='number-pad' 
                         maxLength={2}
                         onChangeText={numberInputHandler}
                         value={enteredValue} 
