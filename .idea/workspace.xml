@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a33efa81-37e6-4860-84c4-e8370d255715" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/rn-guess-a-number.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rn-guess-a-number.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/StartGameScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/StartGameScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +28,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -37,10 +43,14 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="354" y="206" width="1022" height="580" key="AVDManager" timestamp="1620257065154">
+    <state x="426" y="250" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1620587333308">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="354" y="206" width="1022" height="580" key="AVDManager/0.25.1440.875/-405.-1055.1920.1055@0.25.1440.875" timestamp="1620257065154" />
+    <state x="426" y="250" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.25.1440.875/-405.-1055.1920.1055@0.25.1440.875" timestamp="1620587333308" />
+    <state x="354" y="206" width="1022" height="580" key="AVDManager" timestamp="1620747959280">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="354" y="206" width="1022" height="580" key="AVDManager/0.25.1440.875/-405.-1055.1920.1055@0.25.1440.875" timestamp="1620747959280" />
     <state x="241" y="42" key="SettingsEditor" timestamp="1619987750327">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
