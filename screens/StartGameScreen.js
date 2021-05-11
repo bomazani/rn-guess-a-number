@@ -42,13 +42,14 @@ const StartGameScreen = props => {
         setConfirmed(true);
         setSelectedNumber(chosenNumber);
         setEnteredValue('');
+        Keyboard.dismiss();
     };
 
     let confirmedOutput;
 
     if (confirmed) {
         confirmedOutput = (
-            <Card style={styles.summaryContainer}>
+            <Card style={styles.summaryContainer} >
                 <Text>You selected</Text>
                 <NumberContainer>
                     {selectedNumber}
@@ -123,6 +124,7 @@ const styles = StyleSheet.create({
     },
     summaryContainer: {
         marginTop: 20,
+        alignItems: 'center',
     }
 });
 
